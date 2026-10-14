@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "GetRoasted",
+    "slug": "getroasted-space",
+    "scheme": "getroasted",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose an image to share in your roast post."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "space.getroasted.app"
+    },
+    "android": {
+      "package": "space.getroasted.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF8EF"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    }
+  }
+}
